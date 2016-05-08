@@ -24,8 +24,8 @@ body {
     justify-content: center;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-    height: 845px;
+    width: 100vw;
+    height: 100vh;
 }
 .header img {
     flex-basis: auto;
@@ -58,10 +58,10 @@ body {
 }
 
 .render{
-  margin: 0;
-    height: 830px;
-    width: 100%;
+    margin: 0;
     background-image: url(../img/Product_render_big.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
