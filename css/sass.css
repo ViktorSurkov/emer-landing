@@ -30,7 +30,7 @@ body {
     flex-direction: column;
     -webkit-flex-direction: column;
     justify-content: center;
-      align-items: center;
+    align-items: center;
 }
 .header {
     background-size: cover;
@@ -94,23 +94,29 @@ video {
     margin: 0;
     display: flex;
     width: 100%;
-    height: 100%;
-    background-color: #F9F8F6;
+    height: auto;
+    position: relative;
+    background-color: #F7F7F7;
 }
-
 
 .render img{
   width: 100%;
   height: auto;
   position: absolute;
+  left: 0;
   z-index: 1;
 }
 
-#render-prod{
+img #render-prod{
   width: 100%;
   height: auto;
-  position: absolute;
+  position: relative;
   z-index: 0;
+}
+
+#render-p{
+  position: relative;
+  opacity: 0;
 }
 
 #img1, #img2, #img3, #img4, #img5, #img6, #img7 {
