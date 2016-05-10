@@ -3,14 +3,17 @@
   <head>
     <link rel="stylesheet" href="css/sass.css">
         <link rel="stylesheet" href="css/Animate.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.vide.min.js"></script>
+
     <meta charset="utf-8">
     <title>EMER</title>
   </head>
   <body>
     <div class="header" id="buttonMore">
-      <video autoplay poster="img/bg.png" id="bgvid" loop>
-      <source src="img/bg.mp4" type="video/mp4">
-      </video>
+      <div class="video" data-vide-bg="img/bg" data-vide-options="loop: true, muted: true, resizing: false">
+
+      </div>
       <div class="">
 
         <img src="img/EMER_logo_white.png" alt="EMER_logo_white" />
@@ -25,7 +28,6 @@
 
 
     <div class="render" id="render">
-      <a name='render'></a>
       <img id='render-prod' src="img/0.jpg" alt="render" />
       <img id='render-p' src="img/0.jpg" alt="render" />
       <img id='img1' src="img/1.png" alt="1" />
@@ -38,10 +40,17 @@
 
     </div>
     <div class="contacts">
-      <p>P: +38(096) 999 33 88 <br>
-         E: info@emerbelt.me <br>
-      </p>
-      <input type="email" name="name" value="Subscribe">
+      <h1>contacts</h1>
+      <div class="lala">
+        E: info@emerbelt.me<br>
+        P: +38 (096) 999-33-88<br>
+      </div>
+      <div class="social">
+        <a href="https://vk.com/viktor__surkov" target="_blank"><img src="img/vk.png" alt="vk"></a>
+        <a href="http://facebook.com/IkatteiruPanda" target="_blank"><img src="img/fb.png" alt="fb"></a>
+        <a href="https://plus.google.com/u/0/102890245450491519157?hl=en" target="_blank"><img src="img/g+.png" alt="g+"></a>
+        <a href="https://www.instagram.com/v.surkov/" target="_blank"><img src="img/inst.png" alt="inst"></a>
+      </div>
     </div>
 
     <!-- <script type="text/javascript" src="js/jquery-2.2.3.js"></script> -->
