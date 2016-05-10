@@ -4,33 +4,30 @@
     src: url(../fonts/SF-UI-Text-Light.ttf);
     /* Путь к файлу со шрифтом */
 }
-
-.hidden{
-opacity:0;
-}
-.visible{
-opacity:1;
-}
-
-@keyframes fades {
-  0% {
+.hidden {
     opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
-
-
+.visible {
+    opacity: 1;
+}
+@keyframes fades {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 body {
     display: -webkit-flex;
     /* Safari */
     display: flex;
     margin: 0;
+    width: 100vw;
     flex-direction: column;
     -webkit-flex-direction: column;
     justify-content: center;
-      align-items: center;
+    align-items: center;
 }
 .header {
     background-size: cover;
@@ -44,7 +41,7 @@ body {
     width: 100vw;
     height: 100vh;
 }
-video {
+.video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -54,7 +51,6 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background: url('../img/bg.png') no-repeat;
     background-size: cover;
     transition: 1s opacity;
 }
@@ -89,30 +85,59 @@ video {
     font-weight: bold;
     color: #fff;
 }
-
-.render{
+.render {
     margin: 0;
     display: flex;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #F7F7F7;
+}
+.render img {
+    width: 100vw;
     height: auto;
-    background-color: #F9F8F6;
+    position: absolute;
+    left: 0;
+    z-index: 1;
 }
-
-
-.render img{
-  width: 100%;
-  height: auto;
-  position: absolute;
-  z-index: 1;
+img #render-prod {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    z-index: 0;
 }
-
-#render-prod{
-  width: 100%;
-  height: auto;
-  position: absolute;
-  z-index: 0;
+#render-p {
+    position: relative;
+    height: auto;
+    opacity: 0;
 }
-
 #img1, #img2, #img3, #img4, #img5, #img6, #img7 {
-  opacity: 0;
+    opacity: 0;
+}
+
+.contacts{
+  text-align: center;
+  color: white;
+  font-family: SA;
+  margin: 70px;
+  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.contacts h1{
+  color: white;
+  font-size: 70px;
+}
+.lala{
+  font-size: 40px;
+  text-align: center;
+  order: 1;
+}
+.social{
+  flex-flow: row;
+  order: 2;
+}
+.social img{
+  width: 60px;
+  margin: 5px;
 }
