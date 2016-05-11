@@ -93,8 +93,8 @@ body {
 .render {
     margin: 0;
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     position: relative;
     background-color: #F7F7F7;
 }
@@ -113,7 +113,8 @@ img #render-prod {
 }
 #render-p {
     position: relative;
-    height: auto;
+    height: 100%;
+    width: 100%;
     opacity: 0;
 }
 #img1, #img2, #img3, #img4, #img5, #img6, #img7 {
