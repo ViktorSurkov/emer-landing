@@ -55,13 +55,14 @@ body {
     transition: 1s opacity;
 }
 .header img {
-    width: 100%;
+    width: 40vw;
     height: auto;
     margin: 0;
 }
 .header h1 {
     font-family: SA;
-    font-size: 70px;
+    font-size: 60px;
+    text-align: center;
     color: #fff;
     font-weight: lighter;
     margin: 0;
@@ -140,4 +141,22 @@ img #render-prod {
 .social img{
   width: 60px;
   margin: 5px;
+}
+
+.about{
+  display: flex;
+  background-image: url(../img/bgAbout.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: SA;
+  font-size: 40px;
+  color: white;
 }
