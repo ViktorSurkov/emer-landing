@@ -4,6 +4,10 @@
     src: url(../fonts/SF-UI-Text-Light.ttf);
     /* Путь к файлу со шрифтом */
 }
+
+::-webkit-scrollbar{
+  width:0;
+}
 .hidden {
     opacity: 0;
 }
